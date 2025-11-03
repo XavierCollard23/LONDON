@@ -1,0 +1,319 @@
+[
+  {
+    "title": "Dimanche 28 décembre – Découverte des rues de Londres",
+    "note": "",
+    "schedule": [
+      {
+        "time": "15h15-15h45",
+        "moment": "Arrivee a Heathrow",
+        "ambiance": "Formalités et récupération des valises."
+      },
+      {
+        "time": "15h45-17h00",
+        "moment": "Vers l'hotel – Citizen M",
+        "ambiance": "Heathrow Express jusqu'a Paddington puis taxi/metro (75 min)."
+      },
+      {
+        "time": "17h00-17h45",
+        "moment": "Installation a l'hotel",
+        "ambiance": "Check-in et petite pause pour poser les valises."
+      },
+      {
+        "time": "17h45-18h19",
+        "moment": "Trajet vers Carnaby Street",
+        "ambiance": "Prévoir ce trajet sans stress, musique ou podcast en route."
+      },
+      {
+        "time": "18h19-19h04",
+        "moment": "Carnaby Street (repas si besoin)",
+        "ambiance": "Rue pop aux illuminations iconiques, parfaite en début de soirée."
+      },
+      {
+        "time": "19h04-19h12",
+        "moment": "Trajet vers Regent Street",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "19h12-19h57",
+        "moment": "Regent Street",
+        "ambiance": "Arches lumineuses et vitrines de Noel pour une balade tranquille."
+      },
+      {
+        "time": "19h57-20h05",
+        "moment": "Trajet vers Oxford Street",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "20h05-20h50",
+        "moment": "Oxford Street",
+        "ambiance": "Balade libre pour profiter du quartier."
+      },
+      {
+        "time": "20h50-20h58",
+        "moment": "Trajet vers Oxford Circus",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "20h58-21h43",
+        "moment": "Oxford Circus",
+        "ambiance": "Point de vue iconique a découvrir tranquillement."
+      },
+      {
+        "time": "21h43-22h03",
+        "moment": "Trajet vers Covent Garden",
+        "ambiance": "Déplacement fluide (~30 min), prends ton temps."
+      },
+      {
+        "time": "22h03-22h48",
+        "moment": "Covent Garden",
+        "ambiance": "Sapin géant, stands gourmands et atmosphère musicale."
+      },
+      {
+        "time": "22h48-23h09",
+        "moment": "Retour a d’hôtel",
+        "ambiance": "Déplacement fluide (~30 min), prends ton temps. On peut faire Oxford Street – Covent Garden et revenir si on a l’énergie, c’est plus beau dans ce sens mais moins logique dans le programme."
+      }
+    ],
+    "map": "day_1_dimanche_28_decembre_south_bank_illuminations_du_west_end.html",
+    "addenda": []
+  },
+  {
+    "title": "Lundi 29 décembre – Mayfair & Hyde Park Winter Wonderland",
+    "note": "Optimisations : activites regroupees ailleurs (South Bank Promenade); incontournables ajoutes (Liberty London, Buckingham Palace, St James's Park)",
+    "schedule": [
+      {
+        "time": "09h30-10h02",
+        "moment": "Trajet vers Soho",
+        "ambiance": "Prévoir ce trajet sans stress, musique ou podcast en route."
+      },
+      {
+        "time": "10h02-11h02",
+        "moment": "Soho",
+        "ambiance": "Quartier vivant, cafés cosy et ruelles créatives."
+      },
+      {
+        "time": "11h02-11h10",
+        "moment": "Trajet vers Liberty London",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "11h10-11h55",
+        "moment": "Liberty London",
+        "ambiance": "Grand magasin a colombages, sélection mode et décor arty."
+      },
+      {
+        "time": "11h55-12h05",
+        "moment": "Trajet vers New Bond Street",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "12h05-12h50",
+        "moment": "New Bond Street",
+        "ambiance": "Vitrines de luxe et décors scintillants. Ralph Lauren Café"
+      },
+      {
+        "time": "12h50-13h10",
+        "moment": "Trajet vers Buckingham Palace",
+        "ambiance": "Déplacement fluide (~30 min), prends ton temps."
+      },
+      {
+        "time": "13h10-13h55",
+        "moment": "Buckingham Palace",
+        "ambiance": "Cliche photo devant la résidence royale, ambiance carte postale."
+      },
+      {
+        "time": "13h55-14h03",
+        "moment": "Trajet vers St James's Park",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "14h03-14h48",
+        "moment": "St James's Park",
+        "ambiance": "Parc apaisant pour respirer entre deux balades urbaines."
+      },
+      {
+        "time": "14h48-15h21",
+        "moment": "Trajet vers Hyde Park",
+        "ambiance": "Prévoir ce trajet sans stress, musique ou podcast en route."
+      },
+      {
+        "time": "15h21-16h21",
+        "moment": "Hyde Park",
+        "ambiance": "Grand bol d'air, Winter Wonderland juste a cote."
+      },
+      {
+        "time": "16h21-16h29",
+        "moment": "Trajet vers Hyde Park Winter Wonderland",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "16h29-18h59",
+        "moment": "Hyde Park Winter Wonderland",
+        "ambiance": "Attractions festives, vin chaud et grande roue."
+      },
+      {
+        "time": "18h59-19h07",
+        "moment": "Trajet vers Bavarian Village",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "19h07-20h22",
+        "moment": "Bavarian Village",
+        "ambiance": "Chalets en bois, bière chaude et musique live."
+      },
+      {
+        "time": "20h22-20h30",
+        "moment": "Trajet vers Alpen Village",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "20h30-21h45",
+        "moment": "Alpen Village",
+        "ambiance": "Chemin gourmand plus calme pour se poser."
+      },
+      {
+        "time": "21h45-22h43",
+        "moment": "Retour a l'hotel",
+        "ambiance": "Prévoir ce trajet sans stress, musique ou podcast en route."
+      }
+    ],
+    "map": "day_2_lundi_29_decembre_mayfair_hyde_park_winter_wonderland.html",
+    "addenda": []
+  },
+  {
+    "title": "Mardi 30 décembre – Panoramas, Trafalgar Square & grandes maisons londoniennes",
+    "note": "Optimisations : incontournables ajoutes (Borough Market, Oblix at The Shard)",
+    "schedule": [
+      {
+        "time": "09h00-09h08",
+        "moment": "Trajet vers South Bank Promenade",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "09h08-10h08",
+        "moment": "South Bank Promenade",
+        "ambiance": "Flâne le long de la Tamise, ambiance street art et food stalls."
+      },
+      {
+        "time": "10h08-10h31",
+        "moment": "Trajet vers London Eye",
+        "ambiance": "Déplacement fluide (~30 min), prends ton temps."
+      },
+      {
+        "time": "10h31-11h31",
+        "moment": "London Eye",
+        "ambiance": "Vue panoramique douce pour se mettre dans l'ambiance."
+      },
+      {
+        "time": "11h31-11h54",
+        "moment": "Trajet vers Borough Market",
+        "ambiance": "Déplacement fluide (~30 min), prends ton temps."
+      },
+      {
+        "time": "11h54-13h09",
+        "moment": "Borough Market",
+        "ambiance": "Marche gourmet aux stands de Noel pour grignoter local."
+      },
+      {
+        "time": "13h09-13h39",
+        "moment": "Trajet vers Trafalgar Square",
+        "ambiance": "Déplacement fluide (~30 min), prends ton temps."
+      },
+      {
+        "time": "13h39-14h24",
+        "moment": "Trafalgar Square",
+        "ambiance": "Esplanade animée, musiciens et illuminations historiques."
+      },
+      {
+        "time": "14h24-14h34",
+        "moment": "Trajet vers Piccadilly Arcade",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "14h34-15h19",
+        "moment": "Piccadilly Arcade",
+        "ambiance": "Passage couvert élégant juste a cote de Piccadilly Circus."
+      },
+      {
+        "time": "15h19-15h27",
+        "moment": "Trajet vers Fortnum & Mason",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "15h27-16h27",
+        "moment": "Fortnum & Mason",
+        "ambiance": "Maison de the historique, parfait pour une pause sucrerie."
+      },
+      {
+        "time": "16h27-16h58",
+        "moment": "Trajet vers Harrods",
+        "ambiance": "Prévoir ce trajet sans stress, musique ou podcast en route."
+      },
+      {
+        "time": "16h58-18h13",
+        "moment": "Harrods",
+        "ambiance": "Galeries gourmandes et vitrines légendaires de Noel."
+      },
+      {
+        "time": "18h13-19h49",
+        "moment": "Trajet vers Tower Bridge",
+        "ambiance": "Prévoir ce trajet sans stress, musique ou podcast en route."
+      },
+      {
+        "time": "19h49-20h34",
+        "moment": "Tower Bridge (à voir car resto ça fait tard, je réserve à 19h30).",
+        "ambiance": "Balade au bord de la Tamise avec iconique pont victorien."
+      },
+      {
+        "time": "20h34-20h43",
+        "moment": "Trajet vers Oblix at The Shard",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "20h43-22h30",
+        "moment": "Oblix at The Shard",
+        "ambiance": "Diner panoramique avec vue sur toute la ville."
+      },
+      {
+        "time": "22h30-22h40",
+        "moment": "Retour a d’hôtel",
+        "ambiance": "Marche 10 min jusqu'au Shard, profiter des élévateurs panorama."
+      }
+    ],
+    "map": "day_3_mardi_30_decembre_panoramas_trafalgar_square_grandes_maisons_londoniennes.html",
+    "addenda": []
+  },
+  {
+    "title": "Mercredi 31 décembre – Derniers panoramas & départ",
+    "note": "Optimisations : activites regroupees ailleurs (citizenM London Bankside)",
+    "schedule": [
+      {
+        "time": "07h00-07h08",
+        "moment": "Trajet vers The Gentlemen Baristas Bankside",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "07h08-08h23",
+        "moment": "The Gentlemen Baristas Bankside",
+        "ambiance": "Pause gourmande en douceur."
+      },
+      {
+        "time": "08h23-08h31",
+        "moment": "Retour a d’hôtel",
+        "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+      },
+      {
+        "time": "08h31-09h46",
+        "moment": "Transfert vers Heathrow",
+        "ambiance": "Heathrow Express jusqu'a Paddington puis taxi/metro (75 min)."
+      },
+      {
+        "time": "09h46-10h31",
+        "moment": "Formalites de depart",
+        "ambiance": "Enregistrement et controle securite."
+      }
+    ],
+    "map": "day_4_mercredi_31_decembre_derniers_panoramas_depart.html",
+    "addenda": []
+  }
+]

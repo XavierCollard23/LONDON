@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Escapade de Noël à Londres - Programme immersif</title>
+    <meta
+      name="description"
+      content="Découvrez un séjour de Noël à Londres pensé pour en mettre plein les yeux : illuminations, hotspots gourmands et itinéraires détaillés avec cartes interactives."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="snow" aria-hidden="true"></div>
+    <div class="lanterns" aria-hidden="true"></div>
+    <header class="hero">
+      <nav class="main-nav">
+        <a class="brand" href="#top">Noël à Londres</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Ouvrir le menu</span>
+          <span class="nav-line"></span>
+          <span class="nav-line"></span>
+          <span class="nav-line"></span>
+        </button>
+        <div id="nav-links" class="nav-links">
+          <a href="#programme">Programme</a>
+          <a href="#cartes">Cartes interactives</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Séjour clé en main</p>
+        <h1>Vivez la magie de Noël à Londres</h1>
+        <p class="hero-desc">
+          Illuminations féeriques, adresses gourmandes et itinéraires optimisés jour après jour.
+          Une expérience immersive taillée pour séduire vos clients.
+        </p>
+        <div class="hero-actions">
+          <a class="cta" href="#programme">Explorer le programme</a>
+          <a class="ghost" href="#cartes">Voir les cartes</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="highlights" aria-labelledby="highlights-title">
+        <div class="section-header">
+          <h2 id="highlights-title">Une immersion totale dans l'ambiance des fêtes</h2>
+          <p>
+            Chaque journée combine découvertes iconiques, pauses cosy et temps d'émerveillement pour que vos voyageurs
+            vivent un Noël londonien mémorable.
+          </p>
+        </div>
+        <div class="highlight-grid">
+          <article class="highlight-card">
+            <div class="icon-circle">
+              <svg viewBox="0 0 48 48" role="img" aria-label="Illuminations">
+                <path
+                  d="M9 6h30v4H9zM15 10v10l-3 4 3 4v8h4v-8l3-4-3-4V10zm14 0v10l-3 4 3 4v8h4v-8l3-4-3-4V10z"
+                />
+              </svg>
+            </div>
+            <h3>Illuminations spectaculaires</h3>
+            <p>
+              Les balades du soir tirent parti des plus beaux éclairages de Carnaby Street, Regent Street et
+              Winter Wonderland.
+            </p>
+          </article>
+          <article class="highlight-card">
+            <div class="icon-circle">
+              <svg viewBox="0 0 48 48" role="img" aria-label="Gastronomie">
+                <path
+                  d="M18 6a6 6 0 0 0-6 6v12h12V12a6 6 0 0 0-6-6zm-2 6a2 2 0 1 1 4 0v12h-4V12zm16 4c0 3.866-2.239 7-6 7v18h4v-8h4v8h4V23c-3.761 0-6-3.134-6-7z"
+                />
+              </svg>
+            </div>
+            <h3>Moments gourmands</h3>
+            <p>
+              Borough Market, Fortnum &amp; Mason ou Oblix at The Shard : chaque pause gourmande a été sélectionnée pour
+              marquer les esprits.
+            </p>
+          </article>
+          <article class="highlight-card">
+            <div class="icon-circle">
+              <svg viewBox="0 0 48 48" role="img" aria-label="Organisation">
+                <path
+                  d="M24 4 6 12v4h2v20h32V16h2v-4zm14 12v16H10V16zm-20 4h4v4h-4zm0 8h4v4h-4zm8-8h12v4H26zm0 8h12v4H26z"
+                />
+              </svg>
+            </div>
+            <h3>Organisation fluide</h3>
+            <p>
+              Des trajets optimisés, des temps de pause et des cartes interactives pour rester serein tout au long du
+              séjour.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="immersive-experience" aria-labelledby="experience-title">
+        <div class="section-header">
+          <h2 id="experience-title">Plongez au cœur de l'ambiance londonienne</h2>
+          <p>
+            Trois tableaux immersifs pour permettre à vos clients de ressentir la magie des fêtes avant même le départ.
+            Chaque carte renvoie vers la journée correspondante du programme.
+          </p>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card experience-lights">
+            <div class="experience-overlay">
+              <p class="experience-pill">Jour 1</p>
+              <h3>Illuminations &amp; ruelles vibrantes</h3>
+              <p>
+                Carnaby, Regent et Oxford Street scintillent dans une atmosphère rétro chic.
+                Vin chaud, playlists jazzy et photos nocturnes garantissent un démarrage électrisant.
+              </p>
+              <a class="ghost light" href="#jour-1">Ouvrir le programme du jour</a>
+            </div>
+          </article>
+          <article class="experience-card experience-flavors">
+            <div class="experience-overlay">
+              <p class="experience-pill">Jour 2</p>
+              <h3>Saveurs d'hiver &amp; marchés cosy</h3>
+              <p>
+                Entre Liberty London et les villages bavarois, dégustations sucrées et chalets boisés
+                enveloppent vos clients dans une chaleur festive irrésistible.
+              </p>
+              <a class="ghost light" href="#jour-2">Explorer les adresses</a>
+            </div>
+          </article>
+          <article class="experience-card experience-views">
+            <div class="experience-overlay">
+              <p class="experience-pill">Jour 3</p>
+              <h3>Panoramas suspendus au-dessus de la Tamise</h3>
+              <p>
+                Rooftops, grande roue et passerelles vitrées s'enchaînent pour offrir un final spectaculaire
+                au crépuscule londonien.
+              </p>
+              <a class="ghost light" href="#jour-3">Voir le parcours</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="programme" class="programme">
+        <div class="section-header">
+          <h2>Le programme jour par jour</h2>
+          <p>
+            Consultez les horaires, l'ambiance et les moments forts de chaque journée.
+            Les cartes interactives sont intégrées pour visualiser chaque parcours.
+          </p>
+        </div>
+        <div id="programme-content" class="programme-content" aria-live="polite"></div>
+      </section>
+
+      <section id="cartes" class="map-intro" aria-labelledby="maps-title">
+        <div class="section-header">
+          <h2 id="maps-title">Cartes interactives en un clin d'œil</h2>
+          <p>
+            Les itinéraires générés via Leaflet sont intégrés directement ci-dessous. Chaque carte peut être agrandie
+            pour explorer le détail des déplacements et des points d'intérêt.
+          </p>
+        </div>
+        <div class="map-gallery" id="map-gallery" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="footer-content">
+        <p class="footer-title">Prêt à faire rêver vos voyageurs ?</p>
+        <p>
+          Contactez-nous pour adapter ce séjour à votre clientèle ou ajouter des options exclusives.
+        </p>
+        <a class="cta secondary" href="mailto:xaviercollard@hotmail.be">xaviercollard@hotmail.be</a>
+      </div>
+      <p class="footer-note">Escapade festive optimisée &mdash; Londres, 28 au 31 décembre</p>
+    </footer>
+
+    <script id="itinerary-data" type="application/json">
+      [
+        {
+          "title": "Dimanche 28 décembre – Découverte des rues de Londres",
+          "note": "",
+          "schedule": [
+            {
+              "time": "15h15-15h45",
+              "moment": "Arrivee a Heathrow",
+              "ambiance": "Formalités et récupération des valises."
+            },
+            {
+              "time": "15h45-17h00",
+              "moment": "Vers l'hotel – Citizen M",
+              "ambiance": "Heathrow Express jusqu'a Paddington puis taxi/metro (75 min)."
+            },
+            {
+              "time": "17h00-17h45",
+              "moment": "Installation a l'hotel",
+              "ambiance": "Check-in et petite pause pour poser les valises."
+            },
+            {
+              "time": "17h45-18h19",
+              "moment": "Trajet vers Carnaby Street",
+              "ambiance": "Prévoir ce trajet sans stress, musique ou podcast en route."
+            },
+            {
+              "time": "18h19-19h04",
+              "moment": "Carnaby Street (repas si besoin)",
+              "ambiance": "Rue pop aux illuminations iconiques, parfaite en début de soirée."
+            },
+            {
+              "time": "19h04-19h12",
+              "moment": "Trajet vers Regent Street",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "19h12-19h57",
+              "moment": "Regent Street",
+              "ambiance": "Arches lumineuses et vitrines de Noel pour une balade tranquille."
+            },
+            {
+              "time": "19h57-20h05",
+              "moment": "Trajet vers Oxford Street",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "20h05-20h50",
+              "moment": "Oxford Street",
+              "ambiance": "Balade libre pour profiter du quartier."
+            },
+            {
+              "time": "20h50-20h58",
+              "moment": "Trajet vers Oxford Circus",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "20h58-21h43",
+              "moment": "Oxford Circus",
+              "ambiance": "Point de vue iconique a découvrir tranquillement."
+            },
+            {
+              "time": "21h43-22h03",
+              "moment": "Trajet vers Covent Garden",
+              "ambiance": "Déplacement fluide (~30 min), prends ton temps."
+            },
+            {
+              "time": "22h03-22h48",
+              "moment": "Covent Garden",
+              "ambiance": "Sapin géant, stands gourmands et atmosphère musicale."
+            },
+            {
+              "time": "22h48-23h09",
+              "moment": "Retour a d’hôtel",
+              "ambiance": "Déplacement fluide (~30 min), prends ton temps. On peut faire Oxford Street – Covent Garden et revenir si on a l’énergie, c’est plus beau dans ce sens mais moins logique dans le programme."
+            }
+          ],
+          "map": "day_1_dimanche_28_decembre_south_bank_illuminations_du_west_end.html",
+          "addenda": []
+        },
+        {
+          "title": "Lundi 29 décembre – Mayfair & Hyde Park Winter Wonderland",
+          "note": "Optimisations : activites regroupees ailleurs (South Bank Promenade); incontournables ajoutes (Liberty London, Buckingham Palace, St James's Park)",
+          "schedule": [
+            {
+              "time": "09h30-10h02",
+              "moment": "Trajet vers Soho",
+              "ambiance": "Prévoir ce trajet sans stress, musique ou podcast en route."
+            },
+            {
+              "time": "10h02-11h02",
+              "moment": "Soho",
+              "ambiance": "Quartier vivant, cafés cosy et ruelles créatives."
+            },
+            {
+              "time": "11h02-11h10",
+              "moment": "Trajet vers Liberty London",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "11h10-11h55",
+              "moment": "Liberty London",
+              "ambiance": "Grand magasin a colombages, sélection mode et décor arty."
+            },
+            {
+              "time": "11h55-12h05",
+              "moment": "Trajet vers New Bond Street",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "12h05-12h50",
+              "moment": "New Bond Street",
+              "ambiance": "Vitrines de luxe et décors scintillants. Ralph Lauren Café"
+            },
+            {
+              "time": "12h50-13h10",
+              "moment": "Trajet vers Buckingham Palace",
+              "ambiance": "Déplacement fluide (~30 min), prends ton temps."
+            },
+            {
+              "time": "13h10-13h55",
+              "moment": "Buckingham Palace",
+              "ambiance": "Cliche photo devant la résidence royale, ambiance carte postale."
+            },
+            {
+              "time": "13h55-14h03",
+              "moment": "Trajet vers St James's Park",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "14h03-14h48",
+              "moment": "St James's Park",
+              "ambiance": "Parc apaisant pour respirer entre deux balades urbaines."
+            },
+            {
+              "time": "14h48-15h21",
+              "moment": "Trajet vers Hyde Park",
+              "ambiance": "Prévoir ce trajet sans stress, musique ou podcast en route."
+            },
+            {
+              "time": "15h21-16h21",
+              "moment": "Hyde Park",
+              "ambiance": "Grand bol d'air, Winter Wonderland juste a cote."
+            },
+            {
+              "time": "16h21-16h29",
+              "moment": "Trajet vers Hyde Park Winter Wonderland",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "16h29-18h59",
+              "moment": "Hyde Park Winter Wonderland",
+              "ambiance": "Attractions festives, vin chaud et grande roue."
+            },
+            {
+              "time": "18h59-19h07",
+              "moment": "Trajet vers Bavarian Village",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "19h07-20h22",
+              "moment": "Bavarian Village",
+              "ambiance": "Chalets en bois, bière chaude et musique live."
+            },
+            {
+              "time": "20h22-20h30",
+              "moment": "Trajet vers Alpen Village",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "20h30-21h45",
+              "moment": "Alpen Village",
+              "ambiance": "Chemin gourmand plus calme pour se poser."
+            },
+            {
+              "time": "21h45-22h43",
+              "moment": "Retour a l'hotel",
+              "ambiance": "Prévoir ce trajet sans stress, musique ou podcast en route."
+            }
+          ],
+          "map": "day_2_lundi_29_decembre_mayfair_hyde_park_winter_wonderland.html",
+          "addenda": []
+        },
+        {
+          "title": "Mardi 30 décembre – Panoramas, Trafalgar Square & grandes maisons londoniennes",
+          "note": "Optimisations : incontournables ajoutes (Borough Market, Oblix at The Shard)",
+          "schedule": [
+            {
+              "time": "09h00-09h08",
+              "moment": "Trajet vers South Bank Promenade",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "09h08-10h08",
+              "moment": "South Bank Promenade",
+              "ambiance": "Flâne le long de la Tamise, ambiance street art et food stalls."
+            },
+            {
+              "time": "10h08-10h31",
+              "moment": "Trajet vers London Eye",
+              "ambiance": "Déplacement fluide (~30 min), prends ton temps."
+            },
+            {
+              "time": "10h31-11h31",
+              "moment": "London Eye",
+              "ambiance": "Vue panoramique douce pour se mettre dans l'ambiance."
+            },
+            {
+              "time": "11h31-11h54",
+              "moment": "Trajet vers Borough Market",
+              "ambiance": "Déplacement fluide (~30 min), prends ton temps."
+            },
+            {
+              "time": "11h54-13h09",
+              "moment": "Borough Market",
+              "ambiance": "Marche gourmet aux stands de Noel pour grignoter local."
+            },
+            {
+              "time": "13h09-13h39",
+              "moment": "Trajet vers Trafalgar Square",
+              "ambiance": "Déplacement fluide (~30 min), prends ton temps."
+            },
+            {
+              "time": "13h39-14h24",
+              "moment": "Trafalgar Square",
+              "ambiance": "Esplanade animée, musiciens et illuminations historiques."
+            },
+            {
+              "time": "14h24-14h34",
+              "moment": "Trajet vers Piccadilly Arcade",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "14h34-15h19",
+              "moment": "Piccadilly Arcade",
+              "ambiance": "Passage couvert élégant juste a cote de Piccadilly Circus."
+            },
+            {
+              "time": "15h19-15h27",
+              "moment": "Trajet vers Fortnum & Mason",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "15h27-16h27",
+              "moment": "Fortnum & Mason",
+              "ambiance": "Maison de the historique, parfait pour une pause sucrerie."
+            },
+            {
+              "time": "16h27-16h58",
+              "moment": "Trajet vers Harrods",
+              "ambiance": "Prévoir ce trajet sans stress, musique ou podcast en route."
+            },
+            {
+              "time": "16h58-18h13",
+              "moment": "Harrods",
+              "ambiance": "Galeries gourmandes et vitrines légendaires de Noel."
+            },
+            {
+              "time": "18h13-19h49",
+              "moment": "Trajet vers Tower Bridge",
+              "ambiance": "Prévoir ce trajet sans stress, musique ou podcast en route."
+            },
+            {
+              "time": "19h49-20h34",
+              "moment": "Tower Bridge (à voir car resto ça fait tard, je réserve à 19h30).",
+              "ambiance": "Balade au bord de la Tamise avec iconique pont victorien."
+            },
+            {
+              "time": "20h34-20h43",
+              "moment": "Trajet vers Oblix at The Shard",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "20h43-22h30",
+              "moment": "Oblix at The Shard",
+              "ambiance": "Diner panoramique avec vue sur toute la ville."
+            },
+            {
+              "time": "22h30-22h40",
+              "moment": "Retour a d’hôtel",
+              "ambiance": "Marche 10 min jusqu'au Shard, profiter des élévateurs panorama."
+            }
+          ],
+          "map": "day_3_mardi_30_decembre_panoramas_trafalgar_square_grandes_maisons_londoniennes.html",
+          "addenda": []
+        },
+        {
+          "title": "Mercredi 31 décembre – Derniers panoramas & départ",
+          "note": "Optimisations : activites regroupees ailleurs (citizenM London Bankside)",
+          "schedule": [
+            {
+              "time": "07h00-07h08",
+              "moment": "Trajet vers The Gentlemen Baristas Bankside",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "07h08-08h23",
+              "moment": "The Gentlemen Baristas Bankside",
+              "ambiance": "Pause gourmande en douceur."
+            },
+            {
+              "time": "08h23-08h31",
+              "moment": "Retour a d’hôtel",
+              "ambiance": "Petite marche ou trajet rapide (<= 15 min)."
+            },
+            {
+              "time": "08h31-09h46",
+              "moment": "Transfert vers Heathrow",
+              "ambiance": "Heathrow Express jusqu'a Paddington puis taxi/metro (75 min)."
+            },
+            {
+              "time": "09h46-10h31",
+              "moment": "Formalites de depart",
+              "ambiance": "Enregistrement et controle securite."
+            }
+          ],
+          "map": "day_4_mercredi_31_decembre_derniers_panoramas_depart.html",
+          "addenda": []
+        }
+      ]
+    </script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

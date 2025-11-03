@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2e0919ecfe26030b4cb9578c85fc2ac6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2e0919ecfe26030b4cb9578c85fc2ac6" ></div>
+        
+    
+    <div style="
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 9999;
+        background-color: white;
+        padding: 10px 14px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 6px rgba(0,0,0,0.2);
+        font-size: 12px;
+        line-height: 1.4;
+    ">
+        <b>Legende</b><br>
+        <span style="color:#d9534f">&#9679;</span> Depart<br>
+        <span style="color:#337ab7">&#9679;</span> Balade / visite<br>
+        <span style="color:#5cb85c">&#9679;</span> Pause gourmande<br>
+        <span style="color:#6f42c1">&#9679;</span> Retour hotel / aeroport<br>
+        <span style="color:#FF6F61">&#8213;</span> Trajet conseille
+    </div>
+    
+</body>
+<script>
+    
+    
+            var map_2e0919ecfe26030b4cb9578c85fc2ac6 = L.map(
+                "map_2e0919ecfe26030b4cb9578c85fc2ac6",
+                {
+                    center: [51.494033333333334, -0.21783333333333332],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_86475f93eacdf4c07372c5bbcfcd8daa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_86475f93eacdf4c07372c5bbcfcd8daa.addTo(map_2e0919ecfe26030b4cb9578c85fc2ac6);
+        
+    
+            var marker_adcf9a789d822b0aecd5efe80dd46217 = L.marker(
+                [51.5055, -0.0993],
+                {
+}
+            ).addTo(map_2e0919ecfe26030b4cb9578c85fc2ac6);
+        
+    
+            var icon_80760814ce0e240f215783a707642c2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9f90f32b44ab685c4ceafde79a8f19a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_020a04985db54e0f7a755a947d2518f0 = $(`<div id="html_020a04985db54e0f7a755a947d2518f0" style="width: 100.0%; height: 100.0%;">0. Depart - citizenM London Bankside</div>`)[0];
+                popup_c9f90f32b44ab685c4ceafde79a8f19a.setContent(html_020a04985db54e0f7a755a947d2518f0);
+            
+        
+
+        marker_adcf9a789d822b0aecd5efe80dd46217.bindPopup(popup_c9f90f32b44ab685c4ceafde79a8f19a)
+        ;
+
+        
+    
+    
+            marker_adcf9a789d822b0aecd5efe80dd46217.bindTooltip(
+                `<div>
+                     Depart : citizenM London Bankside
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_adcf9a789d822b0aecd5efe80dd46217.setIcon(icon_80760814ce0e240f215783a707642c2e);
+            
+    
+            var marker_d2e4837dd1a781b34d9a6371d6ece9ef = L.marker(
+                [51.5066, -0.0999],
+                {
+}
+            ).addTo(map_2e0919ecfe26030b4cb9578c85fc2ac6);
+        
+    
+            var icon_9e637dd32007172ad0eb8f4741dd0fc3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2e790f398a99191898096ef0616e3e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c794ac153e6e9f29509f97fa74a7b5c5 = $(`<div id="html_c794ac153e6e9f29509f97fa74a7b5c5" style="width: 100.0%; height: 100.0%;">1. The Gentlemen Baristas Bankside (07h08 - 08h23)<br>Pause gourmande en douceur.</div>`)[0];
+                popup_c2e790f398a99191898096ef0616e3e0.setContent(html_c794ac153e6e9f29509f97fa74a7b5c5);
+            
+        
+
+        marker_d2e4837dd1a781b34d9a6371d6ece9ef.bindPopup(popup_c2e790f398a99191898096ef0616e3e0)
+        ;
+
+        
+    
+    
+            marker_d2e4837dd1a781b34d9a6371d6ece9ef.bindTooltip(
+                `<div>
+                     The Gentlemen Baristas Bankside
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d2e4837dd1a781b34d9a6371d6ece9ef.setIcon(icon_9e637dd32007172ad0eb8f4741dd0fc3);
+            
+    
+            var marker_f0ef86731c464092a125d1dae994c297 = L.marker(
+                [51.47, -0.4543],
+                {
+}
+            ).addTo(map_2e0919ecfe26030b4cb9578c85fc2ac6);
+        
+    
+            var icon_61ec32a8781c6f02f30c04d0f0e34bcc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d991c3ad2086f19f86814bf5761fab47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87b19565eb295562bedf7e61e3e45424 = $(`<div id="html_87b19565eb295562bedf7e61e3e45424" style="width: 100.0%; height: 100.0%;">Fin - Heathrow Airport</div>`)[0];
+                popup_d991c3ad2086f19f86814bf5761fab47.setContent(html_87b19565eb295562bedf7e61e3e45424);
+            
+        
+
+        marker_f0ef86731c464092a125d1dae994c297.bindPopup(popup_d991c3ad2086f19f86814bf5761fab47)
+        ;
+
+        
+    
+    
+            marker_f0ef86731c464092a125d1dae994c297.bindTooltip(
+                `<div>
+                     Retour : Heathrow Airport
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0ef86731c464092a125d1dae994c297.setIcon(icon_61ec32a8781c6f02f30c04d0f0e34bcc);
+            
+    
+            var poly_line_1437c172112d011f8db13f109adbc12d = L.polyline(
+                [[51.5055, -0.0993], [51.5066, -0.0999], [51.47, -0.4543]],
+                {"bubblingMouseEvents": true, "color": "#FF6F61", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF6F61", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_2e0919ecfe26030b4cb9578c85fc2ac6);
+        
+    
+            poly_line_1437c172112d011f8db13f109adbc12d.bindTooltip(
+                `<div>
+                     Parcours du jour
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

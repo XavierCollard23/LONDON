@@ -1,0 +1,89 @@
+{
+  "output_document": null,
+  "maps": {
+    "0": "optimized_london/maps/day_1_dimanche_28_decembre_south_bank_illuminations_du_west_end.html",
+    "1": "optimized_london/maps/day_2_lundi_29_decembre_mayfair_hyde_park_winter_wonderland.html",
+    "2": "optimized_london/maps/day_3_mardi_30_decembre_panoramas_trafalgar_square_grandes_maisons_londoniennes.html",
+    "3": "optimized_london/maps/day_4_mercredi_31_decembre_derniers_panoramas_depart.html"
+  },
+  "changes": {
+    "🗓️ Dimanche 28 décembre – South Bank & illuminations du West End": {
+      "removed_duplicates": [
+        "South Bank Promenade",
+        "Heathrow Airport",
+        "Southwark Station"
+      ],
+      "added_essentials": [],
+      "locations": [
+        "Carnaby Street",
+        "Oxford Circus",
+        "Oxford Street",
+        "Regent Street",
+        "Covent Garden",
+        "Paddington Station",
+        "citizenM London Bankside"
+      ]
+    },
+    "🗓️ Lundi 29 décembre – Mayfair & Hyde Park Winter Wonderland": {
+      "removed_duplicates": [
+        "South Bank Promenade"
+      ],
+      "added_essentials": [
+        "Liberty London",
+        "Buckingham Palace",
+        "St James's Park"
+      ],
+      "locations": [
+        "Mayfair Arcades",
+        "Sketch Mayfair",
+        "New Bond Street",
+        "Liberty London",
+        "Soho",
+        "Buckingham Palace",
+        "St James's Park",
+        "Hyde Park",
+        "Hyde Park Winter Wonderland",
+        "Bavarian Village",
+        "Alpen Village",
+        "OXO Tower",
+        "Southwark Station"
+      ]
+    },
+    "🗓️ Mardi 30 décembre – Panoramas, Trafalgar Square & grandes maisons londoniennes": {
+      "removed_duplicates": [],
+      "added_essentials": [
+        "Borough Market",
+        "Oblix at The Shard"
+      ],
+      "locations": [
+        "London Eye",
+        "OXO Tower",
+        "Westminster Pier",
+        "Trafalgar Square",
+        "Palace of Westminster",
+        "Seabird Rooftop",
+        "citizenM London Bankside",
+        "South Bank Promenade",
+        "Bankside Pier",
+        "Piccadilly Arcade",
+        "Fortnum & Mason",
+        "Buckingham Gate",
+        "Hawksmoor Borough",
+        "Borough Market",
+        "Oblix at The Shard",
+        "Tower Bridge",
+        "Harrods"
+      ]
+    },
+    "🗓️ Mercredi  31 décembre – Derniers panoramas & départ": {
+      "removed_duplicates": [
+        "citizenM London Bankside"
+      ],
+      "added_essentials": [],
+      "locations": [
+        "The Gentlemen Baristas Bankside",
+        "Heathrow Airport"
+      ]
+    }
+  }
+}

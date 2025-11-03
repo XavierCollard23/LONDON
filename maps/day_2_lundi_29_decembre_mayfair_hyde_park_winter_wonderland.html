@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e2b8d9abc21d63adc5c85599928e1fb7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e2b8d9abc21d63adc5c85599928e1fb7" ></div>
+        
+    
+    <div style="
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 9999;
+        background-color: white;
+        padding: 10px 14px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 6px rgba(0,0,0,0.2);
+        font-size: 12px;
+        line-height: 1.4;
+    ">
+        <b>Legende</b><br>
+        <span style="color:#d9534f">&#9679;</span> Depart<br>
+        <span style="color:#337ab7">&#9679;</span> Balade / visite<br>
+        <span style="color:#5cb85c">&#9679;</span> Pause gourmande<br>
+        <span style="color:#6f42c1">&#9679;</span> Retour hotel / aeroport<br>
+        <span style="color:#FF6F61">&#8213;</span> Trajet conseille
+    </div>
+    
+</body>
+<script>
+    
+    
+            var map_e2b8d9abc21d63adc5c85599928e1fb7 = L.map(
+                "map_e2b8d9abc21d63adc5c85599928e1fb7",
+                {
+                    center: [51.50750909090909, -0.1431818181818182],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1d46a27625bc589b79da2dd7629fe7fa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1d46a27625bc589b79da2dd7629fe7fa.addTo(map_e2b8d9abc21d63adc5c85599928e1fb7);
+        
+    
+            var marker_fd57e3713e93804d856ebf05fefefb8b = L.marker(
+                [51.5055, -0.0993],
+                {
+}
+            ).addTo(map_e2b8d9abc21d63adc5c85599928e1fb7);
+        
+    
+            var icon_d85eb4fb18a0fcff247ef14647bff10f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca1a92c3f71aea307bf2d6728b83779d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08a0b168283215a5e6e8e46d997bc957 = $(`<div id="html_08a0b168283215a5e6e8e46d997bc957" style="width: 100.0%; height: 100.0%;">0. Depart - citizenM London Bankside</div>`)[0];
+                popup_ca1a92c3f71aea307bf2d6728b83779d.setContent(html_08a0b168283215a5e6e8e46d997bc957);
+            
+        
+
+        marker_fd57e3713e93804d856ebf05fefefb8b.bindPopup(popup_ca1a92c3f71aea307bf2d6728b83779d)
+        ;
+
+        
+    
+    
+            marker_fd57e3713e93804d856ebf05fefefb8b.bindTooltip(
+                `<div>
+                     Depart : citizenM London Bankside
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd57e3713e93804d856ebf05fefefb8b.setIcon(icon_d85eb4fb18a0fcff247ef14647bff10f);
+            
+    
+            var marker_293b5a6bd0eb7c380063f607c65fdc17 = L.marker(
+                [51.5136, -0.1365],
+                {
+}
+            ).addTo(map_e2b8d9abc21d63adc5c85599928e1fb7);
+        
+    
+            var icon_148a0ca3738238d9250cc68ba8a65628 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ff7549c6a19f1906111026e5af712e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ea9501d5fb7d7794c05f7ef48970ba8 = $(`<div id="html_0ea9501d5fb7d7794c05f7ef48970ba8" style="width: 100.0%; height: 100.0%;">1. Soho (10h02 - 11h02)<br>Quartier vivant, cafes cosy et ruelles creatives.</div>`)[0];
+                popup_3ff7549c6a19f1906111026e5af712e0.setContent(html_0ea9501d5fb7d7794c05f7ef48970ba8);
+            
+        
+
+        marker_293b5a6bd0eb7c380063f607c65fdc17.bindPopup(popup_3ff7549c6a19f1906111026e5af712e0)
+        ;
+
+        
+    
+    
+            marker_293b5a6bd0eb7c380063f607c65fdc17.bindTooltip(
+                `<div>
+                     Soho
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_293b5a6bd0eb7c380063f607c65fdc17.setIcon(icon_148a0ca3738238d9250cc68ba8a65628);
+            
+    
+            var marker_b8e6ca92a46e8928ef542a40891ebc13 = L.marker(
+                [51.5136, -0.1406],
+                {
+}
+            ).addTo(map_e2b8d9abc21d63adc5c85599928e1fb7);
+        
+    
+            var icon_339b574c6bc054327e6bc19c69dd6000 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e60753fb49b5ebbfac19024e940c5163 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0752e8a3b17d59dc381c14ab38ef4073 = $(`<div id="html_0752e8a3b17d59dc381c14ab38ef4073" style="width: 100.0%; height: 100.0%;">2. Liberty London (11h10 - 11h55)<br>Grand magasin a colombages, selection mode et deco arty.</div>`)[0];
+                popup_e60753fb49b5ebbfac19024e940c5163.setContent(html_0752e8a3b17d59dc381c14ab38ef4073);
+            
+        
+
+        marker_b8e6ca92a46e8928ef542a40891ebc13.bindPopup(popup_e60753fb49b5ebbfac19024e940c5163)
+        ;
+
+        
+    
+    
+            marker_b8e6ca92a46e8928ef542a40891ebc13.bindTooltip(
+                `<div>
+                     Liberty London
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b8e6ca92a46e8928ef542a40891ebc13.setIcon(icon_339b574c6bc054327e6bc19c69dd6000);
+            
+    
+            var marker_359ab165013bac655d6cf3f0e0e42345 = L.marker(
+                [51.5123, -0.1497],
+                {
+}
+            ).addTo(map_e2b8d9abc21d63adc5c85599928e1fb7);
+        
+    
+            var icon_f6d20de643d5dfd4862c143b89293777 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95355954f2c064cc352d0bc43ddad666 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa83a9053d98a0dac93b699331fa471c = $(`<div id="html_aa83a9053d98a0dac93b699331fa471c" style="width: 100.0%; height: 100.0%;">3. New Bond Street (12h05 - 12h50)<br>Vitrines de luxe et decors scintillants.</div>`)[0];
+                popup_95355954f2c064cc352d0bc43ddad666.setContent(html_aa83a9053d98a0dac93b699331fa471c);
+            
+        
+
+        marker_359ab165013bac655d6cf3f0e0e42345.bindPopup(popup_95355954f2c064cc352d0bc43ddad666)
+        ;
+
+        
+    
+    
+            marker_359ab165013bac655d6cf3f0e0e42345.bindTooltip(
+                `<div>
+                     New Bond Street
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_359ab165013bac655d6cf3f0e0e42345.setIcon(icon_f6d20de643d5dfd4862c143b89293777);
+            
+    
+            var marker_cc5bcef6ff421b65a6c85612f8278b28 = L.marker(
+                [51.5014, -0.1419],
+                {
+}
+            ).addTo(map_e2b8d9abc21d63adc5c85599928e1fb7);
+        
+    
+            var icon_a76fb7a37949110f4dfd7c9e805ceefd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11e92459cc1dcfe4e3be53d5fdd1183a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_622972fcf5c2bc6f38a163166aad3198 = $(`<div id="html_622972fcf5c2bc6f38a163166aad3198" style="width: 100.0%; height: 100.0%;">4. Buckingham Palace (13h10 - 13h55)<br>Cliche photo devant la residence royale, ambiance carte postale.</div>`)[0];
+                popup_11e92459cc1dcfe4e3be53d5fdd1183a.setContent(html_622972fcf5c2bc6f38a163166aad3198);
+            
+        
+
+        marker_cc5bcef6ff421b65a6c85612f8278b28.bindPopup(popup_11e92459cc1dcfe4e3be53d5fdd1183a)
+        ;
+
+        
+    
+    
+            marker_cc5bcef6ff421b65a6c85612f8278b28.bindTooltip(
+                `<div>
+                     Buckingham Palace
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cc5bcef6ff421b65a6c85612f8278b28.setIcon(icon_a76fb7a37949110f4dfd7c9e805ceefd);
+            
+    
+            var marker_e59909dbd9e8d6cf6365978fadbc95c0 = L.marker(
+                [51.501, -0.1365],
+                {
+}
+            ).addTo(map_e2b8d9abc21d63adc5c85599928e1fb7);
+        
+    
+            var icon_6f538edb2e4781a6269a6de236fa50a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aac68d716a29d13eff251f83366dd68c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b917422d48485672a5c6844c3646ebcf = $(`<div id="html_b917422d48485672a5c6844c3646ebcf" style="width: 100.0%; height: 100.0%;">5. St James's Park (14h03 - 14h48)<br>Parc apaisant pour respirer entre deux balades urbaines.</div>`)[0];
+                popup_aac68d716a29d13eff251f83366dd68c.setContent(html_b917422d48485672a5c6844c3646ebcf);
+            
+        
+
+        marker_e59909dbd9e8d6cf6365978fadbc95c0.bindPopup(popup_aac68d716a29d13eff251f83366dd68c)
+        ;
+
+        
+    
+    
+            marker_e59909dbd9e8d6cf6365978fadbc95c0.bindTooltip(
+                `<div>
+                     St James's Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e59909dbd9e8d6cf6365978fadbc95c0.setIcon(icon_6f538edb2e4781a6269a6de236fa50a8);
+            
+    
+            var marker_9df4e4e498b475927a22216e16bb7933 = L.marker(
+                [51.5073, -0.1657],
+                {
+}
+            ).addTo(map_e2b8d9abc21d63adc5c85599928e1fb7);
+        
+    
+            var icon_14f6f81e7a4838bf802776f0f2221301 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40d5f54b31f3f93caaa6a450d4be3a14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b229f5ed6af5aa0006e253834c65b418 = $(`<div id="html_b229f5ed6af5aa0006e253834c65b418" style="width: 100.0%; height: 100.0%;">6. Hyde Park (15h21 - 16h21)<br>Grand bol d'air, Winter Wonderland juste a cote.</div>`)[0];
+                popup_40d5f54b31f3f93caaa6a450d4be3a14.setContent(html_b229f5ed6af5aa0006e253834c65b418);
+            
+        
+
+        marker_9df4e4e498b475927a22216e16bb7933.bindPopup(popup_40d5f54b31f3f93caaa6a450d4be3a14)
+        ;
+
+        
+    
+    
+            marker_9df4e4e498b475927a22216e16bb7933.bindTooltip(
+                `<div>
+                     Hyde Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9df4e4e498b475927a22216e16bb7933.setIcon(icon_14f6f81e7a4838bf802776f0f2221301);
+            
+    
+            var marker_3248219e528eedc510d681c391ff0a17 = L.marker(
+                [51.5073, -0.1668],
+                {
+}
+            ).addTo(map_e2b8d9abc21d63adc5c85599928e1fb7);
+        
+    
+            var icon_f04a813483c2806ea4c628390263898d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_daa75558d8e78e2d5c0f62098e42166c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82583b550cacb5059305fba57dcfeb63 = $(`<div id="html_82583b550cacb5059305fba57dcfeb63" style="width: 100.0%; height: 100.0%;">7. Hyde Park Winter Wonderland (16h29 - 18h59)<br>Attractions festives, vin chaud et grande roue.</div>`)[0];
+                popup_daa75558d8e78e2d5c0f62098e42166c.setContent(html_82583b550cacb5059305fba57dcfeb63);
+            
+        
+
+        marker_3248219e528eedc510d681c391ff0a17.bindPopup(popup_daa75558d8e78e2d5c0f62098e42166c)
+        ;
+
+        
+    
+    
+            marker_3248219e528eedc510d681c391ff0a17.bindTooltip(
+                `<div>
+                     Hyde Park Winter Wonderland
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3248219e528eedc510d681c391ff0a17.setIcon(icon_f04a813483c2806ea4c628390263898d);
+            
+    
+            var marker_9c07e0f70716085023240ef93eac404e = L.marker(
+                [51.5071, -0.1689],
+                {
+}
+            ).addTo(map_e2b8d9abc21d63adc5c85599928e1fb7);
+        
+    
+            var icon_dea1e9dca33fc30b8d36fff85f289cd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d165317b4789f9992c7bd27cf6f7fb9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1b0b1d837890dc008f4f7a4b6c37412 = $(`<div id="html_d1b0b1d837890dc008f4f7a4b6c37412" style="width: 100.0%; height: 100.0%;">8. Bavarian Village (19h07 - 20h22)<br>Chalets en bois, biere chaude et musique live.</div>`)[0];
+                popup_d165317b4789f9992c7bd27cf6f7fb9a.setContent(html_d1b0b1d837890dc008f4f7a4b6c37412);
+            
+        
+
+        marker_9c07e0f70716085023240ef93eac404e.bindPopup(popup_d165317b4789f9992c7bd27cf6f7fb9a)
+        ;
+
+        
+    
+    
+            marker_9c07e0f70716085023240ef93eac404e.bindTooltip(
+                `<div>
+                     Bavarian Village
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9c07e0f70716085023240ef93eac404e.setIcon(icon_dea1e9dca33fc30b8d36fff85f289cd8);
+            
+    
+            var marker_3f68c9b3b17185ab6c4d70b8194c9d9b = L.marker(
+                [51.508, -0.1698],
+                {
+}
+            ).addTo(map_e2b8d9abc21d63adc5c85599928e1fb7);
+        
+    
+            var icon_bc2bf7d816551ac444b1511a9ef25e6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b273a4df4db8f010e374b79247b90e1a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_095c2a19bf39344de168d5e3c9d891b5 = $(`<div id="html_095c2a19bf39344de168d5e3c9d891b5" style="width: 100.0%; height: 100.0%;">9. Alpen Village (20h30 - 21h45)<br>Chemin gourmand plus calme pour se poser.</div>`)[0];
+                popup_b273a4df4db8f010e374b79247b90e1a.setContent(html_095c2a19bf39344de168d5e3c9d891b5);
+            
+        
+
+        marker_3f68c9b3b17185ab6c4d70b8194c9d9b.bindPopup(popup_b273a4df4db8f010e374b79247b90e1a)
+        ;
+
+        
+    
+    
+            marker_3f68c9b3b17185ab6c4d70b8194c9d9b.bindTooltip(
+                `<div>
+                     Alpen Village
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3f68c9b3b17185ab6c4d70b8194c9d9b.setIcon(icon_bc2bf7d816551ac444b1511a9ef25e6f);
+            
+    
+            var marker_9eef8890430d7c0db7065b55042a9a6e = L.marker(
+                [51.5055, -0.0993],
+                {
+}
+            ).addTo(map_e2b8d9abc21d63adc5c85599928e1fb7);
+        
+    
+            var icon_1f7725b0a8b836a81bf1bfea42b4ef15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af0a31c006c6d9e9bb143cb42e0942ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07f52ff1abeb4e02ccbd4f3849af6a0b = $(`<div id="html_07f52ff1abeb4e02ccbd4f3849af6a0b" style="width: 100.0%; height: 100.0%;">Fin - citizenM London Bankside</div>`)[0];
+                popup_af0a31c006c6d9e9bb143cb42e0942ee.setContent(html_07f52ff1abeb4e02ccbd4f3849af6a0b);
+            
+        
+
+        marker_9eef8890430d7c0db7065b55042a9a6e.bindPopup(popup_af0a31c006c6d9e9bb143cb42e0942ee)
+        ;
+
+        
+    
+    
+            marker_9eef8890430d7c0db7065b55042a9a6e.bindTooltip(
+                `<div>
+                     Retour : citizenM London Bankside
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9eef8890430d7c0db7065b55042a9a6e.setIcon(icon_1f7725b0a8b836a81bf1bfea42b4ef15);
+            
+    
+            var poly_line_3f91833ebe93990e3a04a73f98cce7d1 = L.polyline(
+                [[51.5055, -0.0993], [51.5136, -0.1365], [51.5136, -0.1406], [51.5123, -0.1497], [51.5014, -0.1419], [51.501, -0.1365], [51.5073, -0.1657], [51.5073, -0.1668], [51.5071, -0.1689], [51.508, -0.1698], [51.5055, -0.0993]],
+                {"bubblingMouseEvents": true, "color": "#FF6F61", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#FF6F61", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_e2b8d9abc21d63adc5c85599928e1fb7);
+        
+    
+            poly_line_3f91833ebe93990e3a04a73f98cce7d1.bindTooltip(
+                `<div>
+                     Parcours du jour
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
